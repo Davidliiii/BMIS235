@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From Scratch Page</title>
+    <link rel="stylesheet" href="from-scratch.css">
+</head>
+<body style="background-color: #f4f4f9; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <nav>
+        <a href="index.html">Back to Main Site</a>
+    </nav>
+
+    <h1>Lululemon Financial Overview</h1>
+
+    <!-- Ordered list with unordered sublists -->
+    <ol>
+        <li>Financial Highlights
+            <ul>
+                <li>Revenue Growth</li>
+                <li>Net Profit Margin</li>
+                <li>Asset Composition</li>
+            </ul>
+        </li>
+        <li>Comparative Analysis
+            <ul>
+                <li>Versus Nike</li>
+                <li>Versus Crocs</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- Image section -->
+    <div class="section" id="logo-section">
+        <h2>Lululemon Brand</h2>
+        <img src="assets/img/Lululemon_USA.png" 
+             alt="Lululemon USA Market Presence" width="300" />
+        <p>This chart highlights Lululemon’s brand reach and visual identity within the U.S. fitness apparel market.</p>
+    </div>
+
+    <!-- YouTube video section -->
+    <div class="section" id="video-section">
+        <h2>Lululemon: Company Overview</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bhbDDSohJ84" 
+                title="Introduction to Lululemon Financial Analysis" 
+                allowfullscreen></iframe>
+    </div>
+
+    <!-- On-page anchor link -->
+    <p><a href="#viz">Skip to Tableau Visualization</a></p>
+
+    <!-- Custom styled DIVs -->
+    <div class="data-box highlight">
+        <h3>Profit Margin</h3>
+        <p>Lululemon’s profit margin improved from 10.5% to 16.1% in 2024.</p>
+    </div>
+
+    <div class="data-box contrast">
+        <h3>Leverage Ratio</h3>
+        <p>Low reliance on debt financing shows a conservative capital structure.</p>
+    </div>
+
+    <div class="data-box soft">
+        <h3>Inventory Efficiency</h3>
+        <p>Compared to Crocs, Lululemon manages inventory with more balance across current assets.</p>
+    </div>
+
+    <!-- Embedded Tableau Visualization -->
+    <div id="viz">
+        <h2>Interactive Tableau Graph</h2>
+        <div class='tableauPlaceholder' id='viz1746778416187' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Lululemon Growth Analysis' src='https://public.tableau.com/static/images/Pr/Project-1_15568320929370/LululemonGrowthAnalysis/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Project-1_15568320929370/LululemonGrowthAnalysis' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Pr/Project-1_15568320929370/LululemonGrowthAnalysis/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1746778416187');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1024px';
+                vizElement.style.height = '795px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1024px';
+                vizElement.style.height = '795px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '1327px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+</body>
+</html>
